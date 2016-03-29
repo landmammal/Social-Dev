@@ -14,7 +14,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder'               
+gem 'jbuilder'
 gem 'sdoc',                    '0.4.0', group: :doc
 
 group :development, :test do
@@ -25,8 +25,11 @@ group :development, :test do
 end
 
 group :test do
+  # makes the red and green for unit testing
   gem 'minitest-reporters', '1.0.5'
+  # filters backtrace to eliminate unwanted lines, like gem dependencyies
   gem 'mini_backtrace',     '0.1.3'
+  # runs test when ever somthing is change to a page you have in your test
   gem 'guard-minitest',     '2.3.1'
 end
 
